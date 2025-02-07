@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>BB Quote Generator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+  <body>
+  <div class="center-screen">
+    <!-- day of the week start-->
+    <h1>Hello <span id="demo"></span>!</h1>
+    <script>
+      const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+      
+      const d = new Date();
+      let day = weekday[d.getDay()];
+      document.getElementById("demo").innerHTML = day;
+    </script>
+    <!-- day end-->
+    <div id="quoteDisplay">
+      <!-- Quotes will display here -->
+    </div>
+      <button onclick="newQuote()">GENERATE QUOTE</button>
+    <script  src="script.js"></script>
+    <!-- attribution and shout out: https://codepen.io/jezebelee/pen/dpJVwq -->
+  </div>
+  
+</body>
+</html>
