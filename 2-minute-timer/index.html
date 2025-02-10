@@ -26,44 +26,44 @@
         <p>You've discovered a two minute timer!</p>
         <section id="timer-container">
             <button id="start-stop-timer">PRESS ME</button>
-            <p id="timer-display">Time remaining: 2:00</p>
-
             <script>
-                let timer = 120; // 2 minutes in seconds
+                let startTime;
+                let duration = 120000; // 2 minutes in milliseconds
                 let intervalId;
                 let isRunning = false;
-
+            
                 function startTimer() {
+                    startTime = new Date().getTime();
                     intervalId = setInterval(() => {
-                        timer--;
-                        let minutes = Math.floor(timer / 60);
-                        let seconds = timer % 60;
-                        document.getElementById('timer-display').innerText = `Time remaining: ${minutes}:${seconds.toString().padStart(2, '0')}`;
-                        if (timer === 0) {
+                        let currentTime = new Date().getTime();
+                        let elapsed = currentTime - startTime;
+                        let remaining = duration - elapsed;
+                        if (remaining <= 0) {
                             clearInterval(intervalId);
                             isRunning = false;
                             alert('Time\'s up!');
+                        } else {
+                            let minutes = Math.floor(remaining / 60000);
+                            let seconds = Math.floor((remaining % 60000) / 1000);
+                            let milliseconds = Math.floor((remaining % 1000) / 10);
+                            document.getElementById('timer-display').innerText = `Time remaining: ${minutes}:${seconds.toString().padStart(2, '0')}.${milliseconds.toString().padStart(2, '0')}`;
                         }
-                    }, 1000);
+                    }, 10);
                     isRunning = true;
                 }
-
+            
                 function stopTimer() {
                     clearInterval(intervalId);
                     isRunning = false;
                 }
-
+            
                 function resetTimer() {
                     stopTimer();
-                    timer = 120;
-                    document.getElementById('timer-display').innerText = `Time remaining: 2:00`;
+                    document.getElementById('timer-display').innerText = `Time remaining: 2:00.00`;
                 }
-
+            
                 document.getElementById('start-stop-timer').addEventListener('click', () => {
                     if (!isRunning) {
-                        if (timer < 120) {
-                            resetTimer();
-                        }
                         startTimer();
                     } else {
                         stopTimer();
@@ -71,6 +71,7 @@
                 });
             </script>
         </section>
+        <p id="timer-display">Time remaining: 2:00.00</p>
       </div>
     </main>
 </body>
