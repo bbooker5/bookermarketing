@@ -58,8 +58,8 @@ h2 {
 }
 
 .profile-picture {
-    width: 190px;
-    height: 190px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     margin: 20px auto;
     border: 2px solid #33CC33;
@@ -99,4 +99,32 @@ a:active {
         max-width: 90%; /* adjust the maximum width for mobile screens */
         margin: 10px auto;
     }
+}
+
+#start-stop-timer {
+    background-color: #111;
+    color: #33CC33;
+    border: 1px solid #33CC33;
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#start-stop-timer:hover {
+    background-color: #222;
+}
+
+#start-stop-timer:active {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+#timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
