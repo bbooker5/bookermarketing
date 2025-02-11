@@ -128,3 +128,14 @@ a:active {
     justify-content: center;
     padding: 20px;
 }
+#pi-symbol {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #33CC33;
+}
+
+#pi-symbol.light-theme {
+    color: #333;
+}
