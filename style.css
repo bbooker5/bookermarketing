@@ -201,6 +201,209 @@ footer.light-theme {
     text-align: center;
     clear: both;
     border-top: 1px solid #CCC;
+}body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #33CC33;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #33CC33;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #33CC33;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+section {
+    background-color: #111;
+    padding: 1em;
+    border: 1px solid #33CC33;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #33CC33;
+    margin-top: 0;
+}
+
+.profile-picture {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 2px solid #33CC33;
+}
+
+footer {
+    background-color: #111;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #33CC33;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #33CC33;
+}
+
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66FF66;
+    text-shadow: 0 0 5px #33CC33;
+}
+
+a:active {
+    color: #00FF00;
+    text-shadow: 0 0 10px #33CC33;
+}
+
+/* media query for mobile screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* adjust the maximum width for mobile screens */
+        margin: 10px auto;
+    }
+}
+
+/* theme button toggle styling*/
+#theme-toggle-button {
+    background-color: #111;
+    color: #33CC33;
+    border: 1px solid #33CC33;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#theme-toggle-button:hover {
+    background-color: #222;
+}
+
+#theme-toggle-button:active {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#theme-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Light theme */
+body.light-theme {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #F7F7F7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header.light-theme {
+    background-color: #FFF;
+    padding: 1em;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+}
+
+header.light-theme nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header.light-theme nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header.light-theme nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+main.light-theme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.container.light-theme {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+section.light-theme {
+    background-color: #FFF;
+    padding: 1em;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    margin: 20px 0;
+    box-sizing: border-box;
+}
+
+h2.light-theme {
+    color: #333;
+    margin-top: 0;
+}
+
+.profile-picture.light-theme {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 2px solid #CCC;
+}
+
+footer.light-theme {
+    background-color: #FFF;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #CCC;
 }
 
 footer.light-theme p {
@@ -221,4 +424,26 @@ a.light-theme:hover {
 a.light-theme:active {
     color: #337AB7;
     text-shadow: 0 0 10px #CCC;
+}
+
+a.light-theme:hover {
+    color: #23527C;
+    text-shadow: 0 0 5px #CCC;
+}
+
+a.light-theme:active {
+    color: #337AB7;
+    text-shadow: 0 0 10px #CCC;
+}
+
+#pi-symbol {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px;
+    color: #33CC33;
+}
+
+#pi-symbol.light-theme {
+    color: #333;
 }
