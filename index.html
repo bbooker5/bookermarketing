@@ -24,28 +24,27 @@
         <section id="about">
             <h2>Hello world!</h2>
             <p>I enjoy tinkering with computers and building websites.</p>
-            <p>Interests also include music production and synthesizers.</p>
+            <p>Hobbies also include music production and synthesizers.</p>
         </section>
       </section>
       <section id="experience">
-            <!--<p>I have experience working in the Information Technology, Digital Marketing and Customer Care service.</p>-->
             <h2>Experience</h2>
-            <h3>2024-present: Information Technology</h3>
+            <p><strong>2024-present</strong>: Information Technology</p>
               <ul>
                 <li>Scrum Master / Business Analyst</li>
                 <li>Agile Delivery Lead</li>
               </ul>
-            <h3>2017-2024: Digital Marketing</h3>
+            <p><strong>2017-2024</strong>: Digital Marketing</p>
                 <ul>
                   <li>Direct-to-Consumer Ecommerce Specialist</li>
                   <li>Content Administrator</li>
                 </ul>
-            <h3>2015-2017: Information Technology</h3>
+            <p><strong>2015-2017</strong>: Information Technology</p>
                 <ul>
                   <li>Systems Analyst</li>
                   <li>Domain Administrator</li>
                 </ul>
-                <h3>2010-2015: Customer Care</h3>
+            <p><strong>2010-2015</strong>: Customer Care</p>
                 <ul>
                   <li>Systems Support</li>
                   <li>Customer Experience Advocate</li>
@@ -57,6 +56,43 @@
             <h2>Get in Touch</h2>
             <p>Give me a shout. Feel free to contact via <a href="mailto:ben@bookermarketing.com">email</a>, connect with <a href="https://www.linkedin.com/in/ben-booker-tn/">linkedin</a>, or download my <a href="https://bookermarketing.com/docs/resume_bbooker.pdf">resume</a>.</p>
         </section>
+        <div id="theme-div">
+            <p class="theme-toggle">
+              <button id="theme-toggle-button">Switch to Light Theme</button>
+              <script>
+                // Get the theme toggle button
+                const themeToggleButton = document.getElementById('theme-toggle-button');
+
+                // Add event listener to the theme toggle button
+                themeToggleButton.addEventListener('click', () => {
+                    // Get the current theme
+                    const currentTheme = document.body.classList.contains('light-theme') ? 'light' : 'dark';
+
+                    // Toggle the theme
+                    const elementsToUpdate = [
+                        document.body,
+                        document.querySelector('header'),
+                        document.querySelector('main'),
+                        document.querySelector('.container'),
+                        ...document.querySelectorAll('section'),
+                        ...document.querySelectorAll('h2'),
+                        document.querySelector('.profile-picture'),
+                        document.querySelector('footer'),
+                        ...document.querySelectorAll('a')
+                    ];
+
+                    elementsToUpdate.forEach(element => {
+                        if (currentTheme === 'dark') {
+                            element.classList.add('light-theme');
+                        } else {
+                            element.classList.remove('light-theme');
+                        }
+                    });
+                    themeToggleButton.textContent = currentTheme === 'dark' ? 'Switch to Dark Theme' : 'Switch to Light Theme';
+                });
+              </script>
+          </p>
+        </div>
       </div>
     </main>
     <footer>
