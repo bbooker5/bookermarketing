@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.sky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('sky.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.city-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('city_background.png');
+    background-size: 2000px 100vh; /* Set the background size to a large value to allow for repetition */
+    background-position: 0% center;
+    background-repeat: repeat-x; /* Repeat the background image horizontally */
+    z-index: 2;
+    animation: background-move 120s linear infinite;
+}
+
+.city-foreground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('city_foreground.png');
+    background-size: 2000px 100vh; /* Set the background size to a large value to allow for repetition */
+    background-position: 0% center;
+    background-repeat: repeat-x; /* Repeat the background image horizontally */
+    z-index: 3;
+    animation: foreground-move 90s linear infinite;
+}
+
+@keyframes background-move {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: -2000px center;
+    }
+}
+
+@keyframes foreground-move {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: -2500px center;
+    }
+}
