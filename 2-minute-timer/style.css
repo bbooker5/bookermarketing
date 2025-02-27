@@ -127,7 +127,37 @@ a:active {
     align-items: center;
     justify-content: center;
     padding: 20px;
+    margin-bottom: 20px;
 }
+
+#timer-container label, #timer-container input, #timer-container button {
+    margin: 10px;
+}
+
+#increment-time, #decrement-time {
+    background-color: #111;
+    color: #33CC33;
+    border: 1px solid #33CC33;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#increment-time:hover, #decrement-time:hover {
+    background-color: #222;
+}
+
+#increment-time:active, #decrement-time:active {
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+
+
 #pi-symbol {
     position: fixed;
     bottom: 20px;
@@ -138,4 +168,37 @@ a:active {
 
 #pi-symbol.light-theme {
     color: #333;
+}
+
+#custom-time {
+    background-color: #111;
+    color: #33CC33;
+    border: 1px solid #33CC33;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    width: 50px;
+    text-align: center;
+}
+
+#custom-time:focus {
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+
+label[for="custom-time"] {
+    color: #33CC33;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+input[type="number"]::-webkit-inner-spin-button, 
+input[type="number"]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }

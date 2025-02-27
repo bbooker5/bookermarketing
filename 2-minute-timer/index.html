@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Booker Marketing | 2 Minute Timer</title>
+    <title>Booker Marketing | Custom Timer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="/favicon.png" type="image/png">
 </head>
@@ -23,16 +23,24 @@
     </header>
     <main>
       <div class="container">
-        <h2>You've discovered a two minute timer!</h2>
+        <h2>___COUNTDOWN_TIMER_________________</h2>
         <section id="timer-container">
-            <button id="start-stop-timer">PRESS ME</button>
+            <div id="time-controls">
+                <label for="custom-time">Enter time (minutes):</label>
+                <button id="decrement-time">-</button>
+                <input type="number" id="custom-time" value="2">
+                <button id="increment-time">+</button>
+            </div>
+            <button id="start-stop-timer">START | PAUSE | RESET</button>
             <script>
                 let startTime;
-                let duration = 120000; // 2 minutes in milliseconds
+                let duration;
                 let intervalId;
                 let isRunning = false;
             
                 function startTimer() {
+                    let customTime = document.getElementById('custom-time').value;
+                    duration = customTime * 60000; // convert minutes to milliseconds
                     startTime = new Date().getTime();
                     intervalId = setInterval(() => {
                         let currentTime = new Date().getTime();
@@ -59,7 +67,8 @@
             
                 function resetTimer() {
                     stopTimer();
-                    document.getElementById('timer-display').innerText = `Time remaining: 2:00.00`;
+                    let customTime = document.getElementById('custom-time').value;
+                    document.getElementById('timer-display').innerText = `Time remaining: ${customTime}:00.00`;
                 }
             
                 document.getElementById('start-stop-timer').addEventListener('click', () => {
@@ -67,6 +76,27 @@
                         startTimer();
                     } else {
                         stopTimer();
+                    }
+                });
+
+                document.getElementById('increment-time').addEventListener('click', () => {
+                    let customTime = document.getElementById('custom-time').value;
+                    customTime = parseInt(customTime) + 1;
+                    document.getElementById('custom-time').value = customTime;
+                    if (!isRunning) {
+                        resetTimer();
+                    }
+                });
+
+                document.getElementById('decrement-time').addEventListener('click', () => {
+                    let customTime = document.getElementById('custom-time').value;
+                    customTime = parseInt(customTime) - 1;
+                    if (customTime < 1) {
+                        customTime = 1;
+                    }
+                    document.getElementById('custom-time').value = customTime;
+                    if (!isRunning) {
+                        resetTimer();
                     }
                 });
             </script>
