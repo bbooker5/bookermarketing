@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booker Marketing | Name Randomizer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="/favicon.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav>
+            <p>Today is...</p>
+            <h1 id="date-display"></h1>
+            <script>
+                let currentDate = new Date();
+                let dayOfWeek = currentDate.toLocaleString('default', { weekday: 'long' });
+                let date = currentDate.toLocaleString('default', { month: 'long', day: 'numeric', year: 'numeric' });
+
+                document.getElementById('date-display').innerText = `${dayOfWeek}, ${date}`;
+            </script>
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Name Randomizer</h1>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Enter a name">
+            <button onclick="addName()">Submit</button>
+        </div>
+        <ul id="nameList"></ul>
+        <button onclick="randomizeNames()">Randomize</button>
+        <button onclick="resetList()">Reset</button>
+    </div>
+    <script src="script.js"></script>
+    <div id="pi-symbol"><a href="https://bookermarketing.com">&pi;</a></div>
+</body>
+</html>
