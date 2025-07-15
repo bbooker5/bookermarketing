@@ -22,12 +22,29 @@ function renderNames() {
 }
 
 function randomizeNames() {
-    for (let i = names.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [names[i], names[j]] = [names[j], names[i]];
-    }
-    renderNumberedNames();
+    const loadingBarContainer = document.getElementById('loadingBarContainer');
+    const loadingBar = document.getElementById('loadingBar');
+
+    // Reset and show the loading bar
+    loadingBar.style.width = '0%';
+    loadingBarContainer.style.display = 'block';
+
+    // Trigger animation
+    loadingBar.style.animation = 'none';
+    void loadingBar.offsetWidth; // Force reflow
+    loadingBar.style.animation = 'loadingAnim 2s linear forwards';
+
+    // Wait for animation to finish before randomizing
+    setTimeout(() => {
+        for (let i = names.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [names[i], names[j]] = [names[j], names[i]];
+        }
+        renderNumberedNames();
+        loadingBarContainer.style.display = 'none';
+    }, 2000); // Match animation duration
 }
+
 
 function renderNumberedNames() {
     nameList.innerHTML = '';
