@@ -131,3 +131,50 @@ li.struck {
     from { width: 0%; }
     to { width: 100%; }
 }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+footer {
+    background-color: #111;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #33CC33;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #33CC33;
+}
+footer.light-theme {
+    background-color: #FFF;
+    padding: 1em;
+    text-align: center;
+    clear: both;
+    border-top: 1px solid #CCC;
+}
+
+footer.light-theme p {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+a {
+    color: #00FF00;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #66FF66;
+    text-shadow: 0 0 5px #33CC33;
+}
+
+a:active {
+    color: #00FF00;
+    text-shadow: 0 0 10px #33CC33;
+}
