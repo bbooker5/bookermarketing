@@ -162,7 +162,6 @@ main.light-theme {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
 }
 
 .container.light-theme {
@@ -229,13 +228,6 @@ header nav ul li {
 header nav a {
     color: #33CC33;
     text-decoration: none;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2em;
 }
 
 .container {
@@ -365,7 +357,6 @@ main.light-theme {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2em;
 }
 
 .container.light-theme {
