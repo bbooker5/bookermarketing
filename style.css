@@ -47,14 +47,9 @@ section {
     padding: 1em;
     border: 1px solid #33CC33;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 100%; 
+    width: 100%;
     margin: 20px 0;
     box-sizing: border-box;
-}
-
-h2 {
-    color: #33CC33;
-    margin-top: 0;
 }
 
 .profile-picture {
@@ -137,16 +132,16 @@ header.light-theme {
 
 header.light-theme nav a { color: #333; }
 
-main.light-theme { /* Same as base, but kept if you need changes */ }
-
-.container.light-theme { /* Same as base */ }
-
 section.light-theme {
     background-color: #FFF;
     border: 1px solid #CCC;
 }
 
-h2.light-theme { color: #333; }
+h1.light-theme,
+h2.light-theme,
+h3.light-theme {
+    color: #333;
+}
 
 .profile-picture.light-theme { border: 2px solid #CCC; }
 
@@ -177,14 +172,30 @@ a.light-theme:active {
     }
 }
 
+/* --- GLOBAL HEADINGS (Unified + Cleaned Up) --- */
+
+h1 {
+    font-size: 2em;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    color: #33CC33;
+    letter-spacing: 1px;
+}
+
 h2 {
+    font-size: 1.6em;
     margin-top: 0.4em;
     margin-bottom: 0.3em;
+    color: #33CC33;
+    letter-spacing: 0.5px;
 }
 
 h3 {
-    margin-top: 0.6em;
-    margin-bottom: 0.25em;
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    margin-bottom: 0.2em;
+    color: #66FF66;
+    letter-spacing: 0.3px;
 }
 
 ul {
