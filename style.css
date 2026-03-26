@@ -78,25 +78,6 @@ footer p {
     color: #33CC33;
 }
 
-#skills h2 {
-    margin-bottom: 0.3em; /* reduce space under Skills heading */
-}
-
-#skills h3 {
-    margin-top: 0.6em;    /* reduce space above each subheading */
-    margin-bottom: 0.2em; /* reduce space below each subheading */
-}
-
-#skills ul {
-    margin-top: 0.2em;    /* tighten list spacing */
-    margin-bottom: 0.6em;
-}
-
-#skills {
-    padding-top: 0.6em;   /* reduce top padding */
-    padding-bottom: 0.6em;/* reduce bottom padding */
-}
-
 a {
     color: #00FF00;
     text-decoration: none;
@@ -194,4 +175,19 @@ a.light-theme:active {
         max-width: 90%;
         margin: 10px auto;
     }
+}
+
+h2 {
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    margin-top: 0.6em;
+    margin-bottom: 0.25em;
+}
+
+ul {
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
 }
