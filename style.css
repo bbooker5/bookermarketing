@@ -178,24 +178,24 @@ h1 {
     font-size: 2em;
     margin-top: 0.2em;
     margin-bottom: 0.4em;
-    color: #33CC33;
     letter-spacing: 1px;
+    color: #33CC33;
 }
 
 h2 {
     font-size: 1.6em;
     margin-top: 0.4em;
     margin-bottom: 0.3em;
-    color: #33CC33;
     letter-spacing: 0.5px;
+    color: #33CC33;
 }
 
 h3 {
     font-size: 1.25em;
     margin-top: 0.5em;
     margin-bottom: 0.2em;
-    color: #66FF66;
     letter-spacing: 0.3px;
+    color: #33CC33; /* unified, no more bright green */
 }
 
 ul {
