@@ -46,10 +46,13 @@ section {
     background-color: #111;
     padding: 1em;
     border: 1px solid #33CC33;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.08);
-    width: 100%;
     margin: 20px 0;
     box-sizing: border-box;
+
+    /* DARK THEME: subtle green glow */
+    box-shadow:
+        0 0 12px rgba(0, 255, 0, 0.25),   /* stronger outer glow */
+        0 0 6px rgba(0, 255, 0, 0.18);    /* brighter inner glow */
 }
 
 .profile-picture {
@@ -135,6 +138,9 @@ header.light-theme nav a { color: #333; }
 section.light-theme {
     background-color: #FFF;
     border: 1px solid #CCC;
+
+    /* LIGHT THEME: restore original shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 h1.light-theme,
@@ -195,7 +201,7 @@ h3 {
     margin-top: 0.5em;
     margin-bottom: 0.2em;
     letter-spacing: 0.3px;
-    color: #33CC33; /* unified, no more bright green */
+    color: #33CC33;
 }
 
 ul {
