@@ -2,7 +2,6 @@
 📧 [ben@bookermarketing.com](mailto:ben@bookermarketing.com)
 
 I'm a digital marketer with a strong technical edge.  
-I focus on building clear, effective web experiences and supporting teams with organized workflows and straightforward communication.
 
 ### What I Work On
 
