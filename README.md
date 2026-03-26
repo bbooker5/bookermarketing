@@ -1,18 +1,29 @@
-🌐 [bookermarketing.com](https://bookermarketing.com) 
+## 👋 Hi, I'm Ben  
+📧 [ben@bookermarketing.com](mailto:ben@bookermarketing.com)
 
-## 👋 Hi, I'm Ben
-
-I'm a digital marketer with a strong technical edge. 
-
-I focus on building clear, effective web experiences and supporting teams with organized workflows and straightforward communication. 
+I'm a digital marketer with a strong technical edge.  
+I focus on building clear, effective web experiences and supporting teams with organized workflows and straightforward communication.
 
 ### What I Work On
-- Digital marketing strategy & campaign execution  
-- Ecommerce platforms (Shopify, Magento, BigCommerce)  
-- CMS & headless content systems (WordPress, Sanity, Kentico, ExpressionEngine)
-- Analytics & tagging (GA, GTM)
-- Agile workflows with Jira & Confluence  
-- Technical fundamentals: networking, domains, SharePoint  
-- Front‑end basics: HTML, CSS, Git/GitHub  
 
-📧 [ben@bookermarketing.com](mailto:ben@bookermarketing.com)
+**Digital Marketing & Ecommerce**
+- Marketing strategy & campaign execution  
+- Ecommerce platforms: Shopify, Magento, BigCommerce  
+- Analytics & tagging: GA, GTM  
+
+**Content & Web Systems**
+- CMS & headless platforms: WordPress, Sanity, Kentico, ExpressionEngine  
+- Front‑end basics: HTML  
+- Version control: Git & GitHub  
+
+**Collaboration & Workflow**
+- Agile practices with Jira & Confluence  
+- Cross‑team communication and project coordination  
+
+**Technical Foundations**
+- Networking fundamentals  
+- Domain administration  
+- SharePoint infrastructure  
+
+## Visit the Site  
+🌐 [bookermarketing.com](https://bookermarketing.com)
