@@ -12,7 +12,7 @@ I'm a digital marketer with a strong technical edge.
 
 **Content & Web Systems**
 - CMS & headless platforms: WordPress, Sanity, Kentico, ExpressionEngine  
-- Front‑end basics: HTML  
+- Front‑end basics: HTML, CSS, JavaScript
 - Version control: Git & GitHub  
 
 **Collaboration & Workflow**
