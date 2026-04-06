@@ -439,7 +439,7 @@ li {
         padding: 1em 1.2em;
         min-height: 3em;
         width: 100%;
-        max-width: 100%;
+        max-width: 80%;
         box-sizing: border-box;
     }
 
