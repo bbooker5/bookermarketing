@@ -30,7 +30,7 @@
       <div class="container">
         <section id="home">
           <h4>Hello World</h4>
-          <img src="profile_avatar.jpg" alt="Profile Picture" class="profile-picture" onmouseover="this.src='profile.jpg'" onmouseout="this.src='profile_avatar.jpg'">
+          <img src="profile_avatar.jpg" alt="Profile Picture" class="profile-picture" onmouseover="this.src='profile.jpg'; gtag('event', 'profile_hover', {'event_category': 'engagement'});" onmouseout="this.src='profile_avatar.jpg'">
           <h1>Ben Booker</h1>
           <p style="max-width: 600px; margin: 1em auto; text-align: center;">Ecommerce-focused delivery lead</p>
         </section>
@@ -75,13 +75,13 @@
             <p class="contact-intro">Open to full-time roles and flexible opportunities.</p>
             <div class="contact-columns">
               <div class="contact-column">
-                <a class="contact-link" href="mailto:ben@bookermarketing.com" title="Send an email to ben@bookermarketing.com">Send me an Email</a>
+                <a class="contact-link" href="mailto:ben@bookermarketing.com" onclick="gtag('event', 'contact_click', {'link_type': 'email'});">Send me an Email</a>
               </div>
               <div class="contact-column">
-                <a class="contact-link" href="https://www.linkedin.com/in/ben-booker-tn/" target="_blank" rel="noopener noreferrer" title="View my LinkedIn profile">Connect on LinkedIn</a>
+                <a class="contact-link" href="https://www.linkedin.com/in/ben-booker-tn/" target="_blank" onclick="gtag('event', 'contact_click', {'link_type': 'linkedin'});">Connect on LinkedIn</a>
               </div>
               <div class="contact-column">
-                <a class="contact-link" href="https://bookermarketing.com/docs/resume_bbooker.pdf" title="Download my resume (PDF)">Download my Resume</a>
+                <a class="contact-link" href="https://bookermarketing.com/docs/resume_bbooker.pdf" onclick="gtag('event', 'contact_click', {'link_type': 'resume_download'});">Download my Resume</a>
               </div>
             </div>
             <p class="contact-copyright">&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://bookermarketing.com">bookermarketing.com</a></p>
