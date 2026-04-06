@@ -436,7 +436,9 @@ li {
         font-size: 1em;
         padding: 1em 1.2em;
         min-height: 3em;
-        max-width: 320px;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
     }
 
     .contact-copyright {
