@@ -58,11 +58,22 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Accordion (Portfolio)
+// Accordion (Accomplishments)
 document.addEventListener("DOMContentLoaded", () => {
   const headers = document.querySelectorAll("#accomplishments h3");
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
 
-  // --- OPEN FIRST ITEM BY DEFAULT ---
+  // --- DESKTOP: Expand ALL items ---
+  if (!isMobile) {
+    headers.forEach((header) => {
+      const content = header.nextElementSibling;
+      header.classList.add("active");
+      content.classList.add("open");
+    });
+    return; // stop here; desktop doesn't need accordion behavior
+  }
+
+  // --- MOBILE: Expand ONLY the first item ---
   if (headers.length > 0) {
     const firstHeader = headers[0];
     const firstContent = firstHeader.nextElementSibling;
@@ -70,6 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     firstContent.classList.add("open");
   }
 
+  // --- MOBILE: Accordion toggle behavior ---
   headers.forEach((header) => {
     header.addEventListener("click", () => {
       const content = header.nextElementSibling;
