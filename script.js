@@ -58,46 +58,38 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-// Accordion (Accomplishments)
+// Accordion for multiple sections
 document.addEventListener("DOMContentLoaded", () => {
-  const headers = document.querySelectorAll("#accomplishments h3");
-  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  // Add any section IDs here that should behave like an accordion
+  const accordionSections = ["accomplishments", "experience", "skills"];
 
-  // --- DESKTOP: Expand ALL items ---
-  if (!isMobile) {
-    headers.forEach((header) => {
-      const content = header.nextElementSibling;
-      header.classList.add("active");
-      content.classList.add("open");
-    });
-    return; // stop here; desktop doesn't need accordion behavior
-  }
+  accordionSections.forEach(sectionId => {
+    const section = document.getElementById(sectionId);
+    if (!section) return;
 
-  // --- MOBILE: Expand ONLY the first item ---
-  if (headers.length > 0) {
-    const firstHeader = headers[0];
-    const firstContent = firstHeader.nextElementSibling;
-    firstHeader.classList.add("active");
-    firstContent.classList.add("open");
-  }
+    const headers = section.querySelectorAll("h3");
 
-  // --- MOBILE: Accordion toggle behavior ---
-  headers.forEach((header) => {
-    header.addEventListener("click", () => {
-      const content = header.nextElementSibling;
+    // Start fully collapsed on all devices
+    // (No default open items)
 
-      // Close all other items
-      headers.forEach((otherHeader) => {
-        const otherContent = otherHeader.nextElementSibling;
-        if (otherHeader !== header) {
-          otherHeader.classList.remove("active");
-          otherContent.classList.remove("open");
-        }
+    // Accordion toggle behavior
+    headers.forEach(header => {
+      header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+
+        // Close all other items *within this section only*
+        headers.forEach(otherHeader => {
+          const otherContent = otherHeader.nextElementSibling;
+          if (otherHeader !== header) {
+            otherHeader.classList.remove("active");
+            otherContent.classList.remove("open");
+          }
+        });
+
+        // Toggle this one
+        header.classList.toggle("active");
+        content.classList.toggle("open");
       });
-
-      // Toggle this one
-      header.classList.toggle("active");
-      content.classList.toggle("open");
     });
   });
 });

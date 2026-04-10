@@ -1,3 +1,7 @@
+/* =========================================================
+   GLOBAL RESET & BASE
+   ========================================================= */
+
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -21,23 +25,36 @@ main {
 
 .container {
     width: 100%;
-    max-width: none;
     margin: 0;
     padding: 0;
 }
+
+/* Utility: shared max-width for section children */
+section > h2,
+section > h3,
+section > p,
+section > ul {
+    max-width: 900px;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* =========================================================
+   SECTION LAYOUT
+   ========================================================= */
 
 section {
     background-color: #111;
     padding: 3em;
     border: 1px solid #33CC33;
-    margin: 0;
-    box-sizing: border-box;
     min-height: 100vh;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     scroll-snap-align: start;
 }
+
 #experience,
 #skills,
 #contact,
@@ -46,6 +63,17 @@ section {
     padding-top: 3em;
     scroll-snap-stop: always;
 }
+
+#experience,
+#skills {
+    padding-left: 3em;
+    padding-right: 3em;
+}
+
+/* =========================================================
+   PROFILE IMAGE
+   ========================================================= */
+
 .profile-picture {
     width: 250px;
     height: 250px;
@@ -54,21 +82,59 @@ section {
     border: 2px solid #33CC33;
 }
 
-section > h2,
-section > h3,
-section > p {
-    max-width: 900px;
-    margin-left: 0;
-    margin-right: auto;
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+h1, h2, h3, h4 {
+    color: #33CC33;
 }
 
-section > ul {
-    max-width: 900px;
-    margin-left: 0;
-    margin-right: auto;
-    text-align: left;
-    padding-left: 20px;
+h1 {
+    font-size: 3em;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
+    text-align: center;
+    letter-spacing: 1px;
 }
+
+h2 {
+    font-size: 2.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.3em;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    font-size: 1.4em;
+    margin-top: 0.4em;
+    margin-bottom: 0.1em;
+    letter-spacing: 0.3px;
+    break-inside: avoid;
+}
+
+h4 {
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+ul {
+    margin-top: 0.2em;
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+    break-inside: avoid;
+}
+
+li {
+    margin-bottom: 0.4em;
+    font-size: 1em;
+}
+
+/* =========================================================
+   LINKS
+   ========================================================= */
 
 a {
     color: #00FF00;
@@ -85,7 +151,10 @@ a:active {
     text-shadow: 0 0 10px #33CC33;
 }
 
-/* Scroll Indicator */
+/* =========================================================
+   SCROLL INDICATOR
+   ========================================================= */
+
 #scroll-indicator {
     position: fixed;
     top: 50%;
@@ -115,55 +184,9 @@ a:active {
     background-color: #66FF66;
 }
 
-/* --- UI COMPONENTS --- */
-
-/* --- RESPONSIVE --- */
-
-@media only screen and (max-width: 768px) {
-    .container {
-        max-width: 100%;
-        margin: 0;
-    }
-}
-
-h1 {
-    font-size: 3em;
-    margin-top: 0.2em;
-    margin-bottom: 0.4em;
-    letter-spacing: 1px;
-    color: #33CC33;
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.4em;
-    margin-top: 0.4em;
-    margin-bottom: 0.3em;
-    letter-spacing: 0.5px;
-    color: #33CC33;
-}
-
-h4 {
-    font-size: 1.3em;
-    margin-top: 0;
-    margin-bottom: 1em;
-    letter-spacing: 0.5px;
-    color: #33CC33;
-    text-align: center;
-}
-
-#experience {
-    display: flex;
-    flex-direction: column;
-    padding-left: 3em;
-    padding-right: 3em;
-}
-
-#skills {
-    display: block;
-    padding-left: 3em;
-    padding-right: 3em;
-}
+/* =========================================================
+   CONTACT SECTION
+   ========================================================= */
 
 #contact {
     justify-content: space-between;
@@ -200,11 +223,9 @@ h4 {
     border: 1px solid #33CC33;
     border-radius: 14px;
     font-size: 1.25em;
-    text-decoration: none;
     color: #33CC33;
     transition: background-color 0.2s ease, transform 0.15s ease;
     min-height: 2.5em;
-    text-align: center;
     width: 100%;
     max-width: 320px;
 }
@@ -226,41 +247,11 @@ h4 {
     padding-bottom: 20px;
 }
 
-#experience h3,
-#experience ul {
-    max-width: none;
-    margin-left: 0;
-    margin-right: 0;
-}
+/* =========================================================
+   UNIFIED ACCORDION SYSTEM
+   ========================================================= */
 
-#experience ul {
-    margin-bottom: 0.5em;
-}
-
-h3 {
-    font-size: 1.4em;
-    margin-top: 0.4em;
-    margin-bottom: 0.1em;
-    letter-spacing: 0.3px;
-    color: #33CC33;
-    break-inside: avoid;
-}
-
-ul {
-    margin-top: 0.2em;
-    margin-bottom: 0.8em;
-    line-height: 1.6;
-    break-inside: avoid;
-}
-
-li {
-    margin-bottom: 0.4em;
-    font-size: 1em;
-}
-
-/* --- ACCOMPLISHMENTS ACCORDION --- */
-
-#accomplishments h3 {
+section h3 {
     cursor: pointer;
     position: relative;
     padding-left: 1.4em;
@@ -270,7 +261,7 @@ li {
 }
 
 /* Chevron */
-#accomplishments h3::before {
+section h3::before {
     content: ">";
     position: absolute;
     left: 0;
@@ -279,33 +270,37 @@ li {
     transition: transform 0.25s ease;
 }
 
-/* Rotate chevron when active */
-#accomplishments h3.active::before {
+/* Chevron rotation */
+section h3.active::before {
     transform: rotate(90deg);
 }
 
-/* Collapsible content */
-#accomplishments p {
+/* Collapsible wrapper */
+.accordion-content {
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    margin: 0;
     padding-left: 1.4em;
+    margin: 0;
     transition:
         max-height 0.35s ease,
-        opacity 0.25s ease;
+        opacity 0.25s ease,
+        margin 0.25s ease;
 }
 
-/* Expanded content */
-#accomplishments p.open {
-    max-height: 500px; /* plenty of room */
+/* Expanded state */
+.accordion-content.open {
+    max-height: 800px;
     opacity: 1;
     margin-bottom: 1em;
 }
 
+/* =========================================================
+   MOBILE STYLES
+   ========================================================= */
 
-/* --- MOBILE STYLES --- */
 @media only screen and (max-width: 768px) {
+
     body {
         font-size: 16px;
     }
@@ -313,7 +308,7 @@ li {
     section {
         padding: 1.5em;
         min-height: 100vh;
-        padding-right: 3.5em; /* adds safe space for scroll dots */
+        padding-right: 3.5em;
     }
 
     #experience,
@@ -322,37 +317,21 @@ li {
         padding-top: 1.5em;
     }
 
-    #experience {
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-    }
-
+    #experience,
     #skills {
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
 
     #contact {
-        justify-content: space-between;
         padding-top: 1.5em;
         padding-bottom: 1.5em;
     }
 
-    h1 {
-        font-size: 2.5em;
-    }
-
-    h2 {
-        font-size: 2em;
-    }
-
-    h3 {
-        font-size: 1.2em;
-    }
-
-    h4 {
-        font-size: 1.1em;
-    }
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; }
+    h3 { font-size: 1.2em; }
+    h4 { font-size: 1.1em; }
 
     .profile-picture {
         width: 200px;
@@ -360,8 +339,6 @@ li {
     }
 
     .contact-columns {
-        display: flex;
-        flex-direction: column;
         gap: 1.5em;
     }
 
