@@ -57,3 +57,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 });
+
+// Accordion (Portfolio)
+document.addEventListener("DOMContentLoaded", () => {
+  const headers = document.querySelectorAll("#accomplishments h3");
+
+  // --- OPEN FIRST ITEM BY DEFAULT ---
+  if (headers.length > 0) {
+    const firstHeader = headers[0];
+    const firstContent = firstHeader.nextElementSibling;
+    firstHeader.classList.add("active");
+    firstContent.classList.add("open");
+  }
+
+  headers.forEach((header) => {
+    header.addEventListener("click", () => {
+      const content = header.nextElementSibling;
+
+      // Close all other items
+      headers.forEach((otherHeader) => {
+        const otherContent = otherHeader.nextElementSibling;
+        if (otherHeader !== header) {
+          otherHeader.classList.remove("active");
+          otherContent.classList.remove("open");
+        }
+      });
+
+      // Toggle this one
+      header.classList.toggle("active");
+      content.classList.toggle("open");
+    });
+  });
+});

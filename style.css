@@ -1,4 +1,3 @@
-/* --- BASE / DARK THEME (Default) --- */
 html {
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -12,10 +11,6 @@ body {
     padding: 0;
     font-size: 18px;
     overscroll-behavior-y: none;
-}
-
-header {
-    display: none;
 }
 
 main {
@@ -42,15 +37,11 @@ section {
     flex-direction: column;
     justify-content: center;
     scroll-snap-align: start;
-
-    /* DARK THEME: subtle green glow */
-    box-shadow:
-        0 0 12px rgba(0, 255, 0, 0.25),   /* stronger outer glow */
-        0 0 6px rgba(0, 255, 0, 0.18);    /* brighter inner glow */
 }
 #experience,
 #skills,
-#contact {
+#contact,
+#accomplishments {
     justify-content: flex-start;
     padding-top: 3em;
     scroll-snap-stop: always;
@@ -77,22 +68,6 @@ section > ul {
     margin-right: auto;
     text-align: left;
     padding-left: 20px;
-}
-
-footer {
-    background-color: #111;
-    padding: 3em;
-    text-align: center;
-    border-top: 1px solid #33CC33;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-footer p {
-    margin-bottom: 10px;
-    color: #33CC33;
 }
 
 a {
@@ -213,7 +188,8 @@ h4 {
 
 .contact-column {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .contact-link {
@@ -250,79 +226,6 @@ h4 {
     padding-bottom: 20px;
 }
 
-/* Portfolio Section */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em;
-    max-width: 1000px;
-    margin: 0 auto;
-}
-
-.portfolio-item {
-    background-color: rgba(51, 204, 51, 0.05);
-    border: 1px solid #33CC33;
-    border-radius: 8px;
-    padding: 1.5em;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.portfolio-item:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(51, 204, 51, 0.2);
-}
-
-.portfolio-item h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: #33CC33;
-}
-
-.portfolio-item p {
-    margin: 0.5em 0;
-    line-height: 1.6;
-}
-
-.portfolio-item p strong {
-    color: #66FF66;
-}
-
-.skills-columns {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2em;
-}
-
-.skills-column {
-    background-color: rgba(51, 204, 51, 0.05);
-    border: 1px solid #33CC33;
-    border-radius: 8px;
-    padding: 1.5em;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skills-column h3 {
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    color: #33CC33;
-}
-
-.skills-column p {
-    margin: 0.5em 0;
-    line-height: 1.6;
-}
-
-.skills-column p strong {
-    color: #66FF66;
-}
-
-/* Additional styling for mobile devices */
-@media only screen and (max-width: 768px) {
-    .skills-columns {
-        grid-template-columns: 1fr;
-    }
-}
-
 #experience h3,
 #experience ul {
     max-width: none;
@@ -332,20 +235,6 @@ h4 {
 
 #experience ul {
     margin-bottom: 0.5em;
-}
-
-.contact-column {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-.contact-column h3 {
-    margin-top: 0;
-}
-
-.contact-column p {
-    margin: 0.5em 0 0 0;
 }
 
 h3 {
@@ -369,6 +258,52 @@ li {
     font-size: 1em;
 }
 
+/* --- ACCOMPLISHMENTS ACCORDION --- */
+
+#accomplishments h3 {
+    cursor: pointer;
+    position: relative;
+    padding-left: 1.4em;
+    margin-top: 1.2em;
+    margin-bottom: 0.4em;
+    transition: color 0.2s ease;
+}
+
+/* Chevron */
+#accomplishments h3::before {
+    content: ">";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #33CC33;
+    transition: transform 0.25s ease;
+}
+
+/* Rotate chevron when active */
+#accomplishments h3.active::before {
+    transform: rotate(90deg);
+}
+
+/* Collapsible content */
+#accomplishments p {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    margin: 0;
+    padding-left: 1.4em;
+    transition:
+        max-height 0.35s ease,
+        opacity 0.25s ease;
+}
+
+/* Expanded content */
+#accomplishments p.open {
+    max-height: 500px; /* plenty of room */
+    opacity: 1;
+    margin-bottom: 1em;
+}
+
+
 /* --- MOBILE STYLES --- */
 @media only screen and (max-width: 768px) {
     body {
@@ -378,6 +313,7 @@ li {
     section {
         padding: 1.5em;
         min-height: 100vh;
+        padding-right: 3.5em; /* adds safe space for scroll dots */
     }
 
     #experience,
@@ -421,11 +357,6 @@ li {
     .profile-picture {
         width: 200px;
         height: 200px;
-    }
-
-    .skills-columns {
-        grid-template-columns: 1fr;
-        gap: 1.5em;
     }
 
     .contact-columns {
