@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
 // Accordion for multiple sections
 document.addEventListener("DOMContentLoaded", () => {
   // Add any section IDs here that should behave like an accordion
-  const accordionSections = ["accomplishments", "experience", "skills"];
+  const accordionSections = ["accomplishments", "experience", "skills", "education"];
 
   accordionSections.forEach(sectionId => {
     const section = document.getElementById(sectionId);

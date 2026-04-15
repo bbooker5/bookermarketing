@@ -58,14 +58,14 @@ section {
 #experience,
 #skills,
 #contact,
-#accomplishments {
+#accomplishments, #education {
     justify-content: flex-start;
     padding-top: 3em;
     scroll-snap-stop: always;
 }
 
 #experience,
-#skills {
+#skills, #education {
     padding-left: 3em;
     padding-right: 3em;
 }
