@@ -313,12 +313,12 @@ section h3.active::before {
 
     #experience,
     #skills,
-    #contact {
+    #contact, #education {
         padding-top: 1.5em;
     }
 
     #experience,
-    #skills {
+    #skills, #education {
         padding-left: 1.5em;
         padding-right: 1.5em;
     }
