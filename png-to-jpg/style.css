@@ -1,0 +1,185 @@
+/* =========================================================
+   BASE THEME
+   ========================================================= */
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    color: #33CC33;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+h1 {
+    color: #33CC33;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #33CC33;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* =========================================================
+   TILE (MAIN INTERACTION BOX)
+   ========================================================= */
+
+.tile {
+    background-color: #111;
+    border: 1px solid #33CC33;
+    padding: 20px;
+    text-align: center;
+
+    box-shadow: 0 0 8px rgba(51, 204, 51, 0.2);
+}
+
+/* =========================================================
+   FORM ELEMENTS
+   ========================================================= */
+
+label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Base input styling */
+input {
+    font-family: inherit;
+    background-color: #000;
+    color: #33CC33;
+    border: 1px solid #33CC33;
+
+    padding: 6px;
+    margin-top: 5px;
+
+    transition: 
+        background-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* Hover glow */
+input:hover {
+    border-color: #66FF66;
+    box-shadow: 0 0 5px #33CC33;
+}
+
+/* Click feedback */
+input:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 8px #33CC33;
+}
+
+/* Focus glow */
+input:focus {
+    outline: none;
+    box-shadow: 0 0 8px #33CC33;
+}
+
+/* File input spacing */
+input[type="file"] {
+    margin-top: 10px;
+}
+
+/* File button styling */
+input[type="file"]::file-selector-button {
+    background-color: #111;
+    color: #33CC33;
+    border: 1px solid #33CC33;
+    padding: 6px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-family: inherit;
+
+    transition: 
+        background-color 0.2s ease,
+        transform 0.15s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+/* File button hover */
+input[type="file"]::file-selector-button:hover {
+    background-color: rgba(51, 204, 51, 0.08);
+    box-shadow: 0 0 5px #33CC33;
+    border-color: #66FF66;
+}
+
+/* File button click */
+input[type="file"]::file-selector-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 0 8px #33CC33;
+}
+
+/* =========================================================
+   RANGE SLIDER (QUALITY CONTROL)
+   ========================================================= */
+
+input[type="range"] {
+    width: 100%;
+    background: transparent;
+    margin-top: 10px;
+}
+
+/* Track */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 4px;
+    background: #33CC33;
+}
+
+input[type="range"]::-moz-range-track {
+    height: 4px;
+    background: #33CC33;
+}
+
+/* Thumb */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border: 1px solid #33CC33;
+    margin-top: -5px;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    background: #000;
+    border: 1px solid #33CC33;
+    cursor: pointer;
+}
+
+/* Slider hover glow */
+input[type="range"]:hover::-webkit-slider-thumb {
+    box-shadow: 0 0 6px #33CC33;
+}
+
+input[type="range"]:hover::-moz-range-thumb {
+    box-shadow: 0 0 6px #33CC33;
+}
+
+/* =========================================================
+   STATUS TEXT
+   ========================================================= */
+
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+    opacity: 0.8;
+}
