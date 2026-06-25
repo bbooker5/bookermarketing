@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PNG → JPG Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>PNG → JPG</h1>
+
+<div class="tile">
+  <h2>TRY IT NOW</h2>
+
+  <label>
+    Quality: <span id="qualityValue">80</span>
+    <br>
+    <input type="range" id="quality" min="1" max="100" value="80">
+  </label>
+
+  <input type="file" id="upload" multiple accept="image/png">
+
+  <p id="status"></p>
+</div>
+
+<script>
+  // Update slider display
+  const qualityInput = document.getElementById("quality");
+  const qualityValue = document.getElementById("qualityValue");
+
+  qualityInput.addEventListener("input", () => {
+    qualityValue.textContent = qualityInput.value;
+  });
+
+  // Conversion logic
+  document.getElementById("upload").addEventListener("change", async (e) => {
+    const status = document.getElementById("status");
+
+    let quality = parseInt(qualityInput.value, 10) / 100;
+
+    // Safety fallback
+    if (!quality || quality <= 0 || quality > 1) {
+      quality = 0.8;
+    }
+
+    status.textContent = "Processing...";
+
+    let count = 0;
+
+    for (const file of e.target.files) {
+      const img = new Image();
+      img.src = URL.createObjectURL(file);
+
+      await img.decode();
+
+      const canvas = document.createElement("canvas");
+      canvas.width = img.width;
+      canvas.height = img.height;
+
+      const ctx = canvas.getContext("2d");
+
+      // Fill white background (prevents black background on transparent PNGs)
+      ctx.fillStyle = "#ffffff";
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.drawImage(img, 0, 0);
+
+      canvas.toBlob((blob) => {
+        const a = document.createElement("a");
+        a.href = URL.createObjectURL(blob);
+        a.download = file.name.replace(/\.png$/i, ".jpg");
+        a.click();
+      }, "image/jpeg", quality);
+
+      count++;
+      status.textContent = `Processed ${count} files...`;
+    }
+
+    status.textContent = `Done! Converted ${count} images.`;
+  });
+</script>
+
+</body>
+</html>
