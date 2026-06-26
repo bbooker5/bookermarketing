@@ -1,280 +1,339 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-            <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Vainglory: Idle boastfulness.</description>
-    </item>
+    
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Gobbledygook: A meaningless language; jargon that is hard to understand.</description>
+    <title>Weird Words: Rabelaisian</title>
+    <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Coarsely hilarious.</description>
     </item>
+
+    <!-- BEGIN WEIRD WORDS
+
+    <title>Weird Words: Vainglory</title>
+    <pubDate>Mon, 15 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Idle boastfulness.</description>
+    </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Quomodocunquizing: Making money in any way that you can.</description>
+    <title>Weird Words: Gobbledygook</title>
+    <pubDate>Tue, 16 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A meaningless language; jargon that is hard to understand.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Xiphoid: Sword-shaped.</description>
+    <title>Weird Words: Quomodocunquizing</title>
+    <pubDate>Wed, 17 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Making money in any way that you can.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Bumfuzzle: Confused, perplexed.</description>
+    <title>Weird Words: Xiphoid</title>
+    <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Sword-shaped.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Nudiustertian: The day before yesterday.</description>
+    <title>Weird Words: Bumfuzzle</title>
+    <pubDate>Fri, 19 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Confused, perplexed.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Umbel: Mass of flowers springing from a single center.</description>
+    <title>Weird Words: Nudiustertian</title>
+    <pubDate>Sat, 20 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: The day before yesterday.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Bibble: To drink often; to eat and/or drink noisily.</description>
+    <title>Weird Words: Umbel</title>
+    <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Mass of flowers springing from a single center.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Quire: Two dozen sheets of paper.</description>
+    <title>Weird Words: Bibble</title>
+    <pubDate>Mon, 22 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: To drink often; to eat and/or drink noisily.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Abequacious: Extremely fond of eating; gluttonous.</description>
+    <title>Weird Words: Quire</title>
+    <pubDate>Tue, 23 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Two dozen sheets of paper.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Tittynope: A small quantity of something left over.</description>
+    <title>Weird Words: Abequacious</title>
+    <pubDate>Wed, 24 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Extremely fond of eating; gluttonous.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Rabble: A device for stirring molten iron in a furnace.</description>
+    <title>Weird Words: Tittynope</title>
+    <pubDate>Thu, 25 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A small quantity of something left over.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Octothorpe: The pound sign (#).</description>
+    <title>Weird Words: Rabble</title>
+    <pubDate>Fri, 26 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A device for stirring molten iron in a furnace.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Macaroni: Nonsense; foolishness.</description>
+    <title>Weird Words: Octothorpe</title>
+    <pubDate>Sat, 27 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: The pound sign (#).</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Jabberwock: Nonsense, gibberish.</description>
+    <title>Weird Words: Macaroni</title>
+    <pubDate>Sun, 28 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Nonsense; foolishness.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
-        <description>Saccadic: Jerky; twitching.</description>
+    <title>Weird Words: Jabberwock</title>
+    <pubDate>Mon, 29 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Nonsense, gibberish.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Erf: A plot of land.</description>
+    <title>Weird Words: Saccadic</title>
+    <pubDate>Tue, 30 Jun 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Jerky; twitching.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Finifugal: Afraid of finishing anything.</description>
+    <title>Weird Words: Erf</title>
+    <pubDate>Wed, 01 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A plot of land.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Yarborough: Hand of cards containing no card above a nine.</description>
+    <title>Weird Words: Finifugal</title>
+    <pubDate>Thu, 02 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Afraid of finishing anything.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Halfp ace: A platform of a staircase where the stair turns back in exactly the reverse direction of the lower flight.</description>
+    <title>Weird Words: Yarborough</title>
+    <pubDate>Fri, 03 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Hand of cards containing no card above a nine.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Gardyloo: Warning cry used when throwing slops from windows into the street (medieval Edinburgh).</description>
+    <title>Weird Words: Halfpace</title>
+    <pubDate>Sat, 04 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A staircase platform where the stair turns back in the reverse direction.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Xylocarp: Hard and woody fruit.</description>
+    <title>Weird Words: Gardyloo</title>
+    <pubDate>Sun, 05 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Warning cry used when throwing slops from windows into the street.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Lamprophony: Speaking in loud and clear tones.</description>
+    <title>Weird Words: Xylocarp</title>
+    <pubDate>Mon, 06 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Hard and woody fruit.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Wakerife: Wakeful; indisposed to sleep.</description>
+    <title>Weird Words: Lamprophony</title>
+    <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Speaking in loud and clear tones.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Ulotrichous: Having wooly or crispy hair.</description>
+    <title>Weird Words: Wakerife</title>
+    <pubDate>Wed, 08 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Wakeful; indisposed to sleep.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Lollygag: To spend time aimlessly.</description>
+    <title>Weird Words: Ulotrichous</title>
+    <pubDate>Thu, 09 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Having wooly or crispy hair.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Hallux: Big toe.</description>
+    <title>Weird Words: Lollygag</title>
+    <pubDate>Fri, 10 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: To spend time aimlessly.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Vacherin: A sweet mixture of meringue and whipped cream.</description>
+    <title>Weird Words: Hallux</title>
+    <pubDate>Sat, 11 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Big toe.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Abeam: Along the beam of a ship; perpendicular to the direction of travel.</description>
+    <title>Weird Words: Vacherin</title>
+    <pubDate>Sun, 12 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A sweet mixture of meringue and whipped cream.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Cacodemonomania: The pathological belief that one is inhabited by an evil spirit.</description>
+    <title>Weird Words: Abeam</title>
+    <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Along the beam of a ship; perpendicular to travel.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Gadzooks: Mild oath.</description>
+    <title>Weird Words: Cacodemonomania</title>
+    <pubDate>Tue, 14 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: The pathological belief that one is inhabited by an evil spirit.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Paean: Song of thanksgiving.</description>
+    <title>Weird Words: Gadzooks</title>
+    <pubDate>Wed, 15 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Mild oath.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Kennebecker: Knapsack.</description>
+    <title>Weird Words: Paean</title>
+    <pubDate>Thu, 16 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Song of thanksgiving.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Taradiddle: Pretentious nonsense.</description>
+    <title>Weird Words: Kennebecker</title>
+    <pubDate>Fri, 17 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Knapsack.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Meldrop: A drop of mucus at the nose, whether produced by cold or otherwise.</description>
+    <title>Weird Words: Taradiddle</title>
+    <pubDate>Sat, 18 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Pretentious nonsense.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Yabba: Large Jamaican earthenware or wooden vessel.</description>
+    <title>Weird Words: Meldrop</title>
+    <pubDate>Sun, 19 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A drop of mucus at the nose.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Imago: The idealized mental image of a person.</description>
+    <title>Weird Words: Yabba</title>
+    <pubDate>Mon, 20 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Large Jamaican earthenware or wooden vessel.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Abecedarian: Pertaining to the alphabet or its study.</description>
+    <title>Weird Words: Imago</title>
+    <pubDate>Tue, 21 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: The idealized mental image of a person.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Snickersnee: To engage in cut-and-thrust fighting with knives.</description>
+    <title>Weird Words: Abecedarian</title>
+    <pubDate>Wed, 22 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Pertaining to the alphabet or its study.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Falsiloquence: Deceitful speech.</description>
+    <title>Weird Words: Snickersnee</title>
+    <pubDate>Thu, 23 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: To engage in cut-and-thrust fighting with knives.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Ragamuffin: A person, typically a child, in ragged, dirty clothes.</description>
+    <title>Weird Words: Falsiloquence</title>
+    <pubDate>Fri, 24 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Deceitful speech.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Oxter: To take under the arm; to support by taking the arm.</description>
+    <title>Weird Words: Ragamuffin</title>
+    <pubDate>Sat, 25 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A person, typically a child, in ragged, dirty clothes.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Kerfuffle: A commotion or fuss.</description>
+    <title>Weird Words: Oxter</title>
+    <pubDate>Sun, 26 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: To take under the arm; to support by the arm.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Quackle: To choke; to suffocate.</description>
+    <title>Weird Words: Kerfuffle</title>
+    <pubDate>Mon, 27 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A commotion or fuss.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Gargle: (placeholder—not in original list).</description>
+    <title>Weird Words: Quackle</title>
+    <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: To choke; to suffocate.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Jaculiferous: Having arrow-like prickles.</description>
+    <title>Weird Words: Gargle</title>
+    <pubDate>Wed, 29 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: (placeholder—not in original list).</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
-        <description>Abaft: Toward the stern of a ship; further aft.</description>
+    <title>Weird Words: Jaculiferous</title>
+    <pubDate>Thu, 30 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Having arrow-like prickles.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Jargoon: Brilliant pale or colorless zircon.</description>
+    <title>Weird Words: Abaft</title>
+    <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Toward the stern of a ship; further aft.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Abatjour: Skylight or device to direct light into a room.</description>
+    <title>Weird Words: Jargoon</title>
+    <pubDate>Sat, 01 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Brilliant pale or colorless zircon.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Hent: To grasp; to seize.</description>
+    <title>Weird Words: Abatjour</title>
+    <pubDate>Sun, 02 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Skylight or device to direct light into a room.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Pauciloquent: Of few words; speaking little.</description>
+    <title>Weird Words: Hent</title>
+    <pubDate>Mon, 03 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: To grasp; to seize.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Wed, 05 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Rabelaisian: Coarsely hilarious.</description>
+    <title>Weird Words: Pauciloquent</title>
+    <pubDate>Tue, 04 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Of few words; speaking little.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Jentacular: Pertaining to breakfast.</description>
+    <title>Weird Words: Jentacular</title>
+    <pubDate>Thu, 06 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Pertaining to breakfast.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Valetudinarian: A sickly or weak person, especially one constantly and morbidly concerned with his or her health.</description>
+    <title>Weird Words: Valetudinarian</title>
+    <pubDate>Sun, 09 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: A sickly or weak person concerned with their health.</description>
     </item>
+
     <item>
-        <title>Weird Words</title>
-        <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
-        <description>Zoanthropy: Delusion that one has been transformed into an animal.</description>
+    <title>Weird Words: Zoanthropy</title>
+    <pubDate>Mon, 10 Aug 2026 00:00:00 GMT</pubDate>
+    <description>Definition: Delusion that one has been transformed into an animal.</description>
     </item>
+
+    END WEIRD WORDS -->
+
     </channel>
 </rss>
