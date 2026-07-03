@@ -12,14 +12,14 @@
 
 <div class="tile">
   <h2>C O N V E R T</h2>
-
   <label>
     Quality: <span id="qualityValue">80</span>
     <br>
     <input type="range" id="quality" min="1" max="100" value="80">
   </label>
 
-  <input type="file" id="upload" multiple accept="image/png">
+  <div class="drop-hint" id="dropHint">Drop PNGs here or click this box to browse</div>
+  <input type="file" id="upload" class="hidden-file" multiple accept="image/png">
 
   <p id="status"></p>
 </div>
@@ -28,30 +28,32 @@
   // Update slider display
   const qualityInput = document.getElementById("quality");
   const qualityValue = document.getElementById("qualityValue");
+  const status = document.getElementById("status");
+  const upload = document.getElementById("upload");
+  const dropHint = document.getElementById('dropHint');
 
   qualityInput.addEventListener("input", () => {
     qualityValue.textContent = qualityInput.value;
   });
 
-  // Conversion logic
-  document.getElementById("upload").addEventListener("change", async (e) => {
-    const status = document.getElementById("status");
+  // Utility to convert FileList/Array of Files
+  async function convertFiles(fileList) {
+    const files = Array.from(fileList).filter(f => /\.png$/i.test(f.name));
+    if (files.length === 0) {
+      status.textContent = "No PNG files found.";
+      return;
+    }
 
     let quality = parseInt(qualityInput.value, 10) / 100;
-
-    // Safety fallback
-    if (!quality || quality <= 0 || quality > 1) {
-      quality = 0.8;
-    }
+    if (!quality || quality <= 0 || quality > 1) quality = 0.8;
 
     status.textContent = "Processing...";
 
     let count = 0;
 
-    for (const file of e.target.files) {
+    for (const file of files) {
       const img = new Image();
       img.src = URL.createObjectURL(file);
-
       await img.decode();
 
       const canvas = document.createElement("canvas");
@@ -59,27 +61,67 @@
       canvas.height = img.height;
 
       const ctx = canvas.getContext("2d");
-
-      // Fill white background (prevents black background on transparent PNGs)
       ctx.fillStyle = "#ffffff";
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-
       ctx.drawImage(img, 0, 0);
 
-      canvas.toBlob((blob) => {
+      const blob = await new Promise(resolve => canvas.toBlob(resolve, "image/jpeg", quality));
+      if (blob) {
         const a = document.createElement("a");
         a.href = URL.createObjectURL(blob);
         a.download = file.name.replace(/\.png$/i, ".jpg");
         a.click();
-      }, "image/jpeg", quality);
+        URL.revokeObjectURL(a.href);
+      }
 
       count++;
-      status.textContent = `Processed ${count} files...`;
+      status.textContent = `Processed ${count} of ${files.length}...`;
     }
 
     status.textContent = `Done! Converted ${count} images.`;
+  }
+
+  // File input change
+  upload.addEventListener("change", async (e) => {
+    await convertFiles(e.target.files);
+    upload.value = null;
+  });
+
+  // Make the whole .tile a drop target and clickable to open picker
+  const tile = document.querySelector('.tile');
+
+  // Prevent default browser behavior for drops outside our UI
+  window.addEventListener('dragover', (e) => e.preventDefault());
+  window.addEventListener('drop', (e) => e.preventDefault());
+
+  // Click the tile to open file picker
+  tile.addEventListener('click', () => upload.click());
+  // Tile drag interactions (full .tile is the drop target)
+  ['dragenter', 'dragover'].forEach(ev => {
+    tile.addEventListener(ev, (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      tile.classList.add('dragover');
+      if (dropHint) dropHint.textContent = 'Release to drop files';
+    });
+  });
+
+  ['dragleave', 'dragend', 'drop'].forEach(ev => {
+    tile.addEventListener(ev, (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      tile.classList.remove('dragover');
+      if (dropHint) dropHint.textContent = 'Drop PNGs here or click this box to browse';
+    });
+  });
+
+  tile.addEventListener('drop', async (e) => {
+    const dtFiles = e.dataTransfer.files;
+    await convertFiles(dtFiles);
   });
 </script>
+
+<p class="contact-copyright">&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://bookermarketing.com">bookermarketing.com</a></p>
 
 </body>
 </html>
