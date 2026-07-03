@@ -7,13 +7,22 @@ body {
     background-color: #000;
     color: #33CC33;
     margin: 0;
+    border: 1px solid #33CC33;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 
-    min-height: 100vh;
+    /* account for 1px border (top+bottom = 2px) so border doesn't create scroll */
+    min-height: calc(100vh - 2px);
+    box-sizing: border-box;
+    border: 1px solid #33CC33;
+}
+
+/* Make box-sizing predictable so borders don't add to viewport overflow */
+html, *, *::before, *::after {
+    box-sizing: border-box;
 }
 
 /* =========================================================
